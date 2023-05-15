@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> No me siento bien </title>
-        <meta name="viewport" content="width device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -10,14 +10,14 @@
         <p> Estas semanas han sido raras, no encuentro palabras para expresarlo. No paro de estar triste.</p>
 
         <button id="inicio"> El tiempo corre </button>
-        <script src="./script.js"></script>
+       
 
         <h1>¿Te sientes cansado?</h1>
 
-<form action="/action_page.php">
+<form id="formulario">
     <!-- 1) php es otro lenguaje que tiene que ver con los servidores -->
   <label for="fname">Me siento similar:</label>
-  <input type="text" autofocus value="afirmativo" id="fname" name="fname"><br><br>
+  <input type="text" autofocus value="Meh" id="fname" name="fname"><br><br>
   <label for="lname">No te comprendo:</label>
   <input type="text" id="lname" name="lname"><br><br>
   <input type="submit" value="Ingresar"><br><br>
@@ -35,5 +35,7 @@
 <input type="text" id="myInput" oninput="bacan()">
 <p id="demo"></p>
 <!-- 4) Una pàgina web es un conjunto de decisiones y eventos latentes que pueden ocurrir apenas se carga la web, o que espera a tener que interactuar con esta -->
-    </body>
+<script src="./script.js"></script>   
+<!-- La funcion script se coloca al final de body, para darle tiempo a la página para que los cree -->
+</body>
 </html>
