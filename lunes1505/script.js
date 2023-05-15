@@ -37,7 +37,8 @@ formulario.addEventListener("submit", grabarInfo);
 // Rehacer en un nuevo documento desde let formulario hasta la lìnea de alerta (todo).
 
 function grabarInfo(){
-    alert ("ahora");
+    let apellido = document.getElementById ("lname");
+    alert (apellido.value);
 }
 
 // Hay que considerar los tipos de elementos usados en HTML. 
