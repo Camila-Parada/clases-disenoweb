@@ -16,8 +16,8 @@ botonInicio.addEventListener ("mousedown", cambiarMouse)
 function cambiarMouse () {
     console.log ("poto");
     botonInicio.style.backgroundColor = ("blue");
-/*     botonInicio.style.font = ("Times New Roman");
- */    botonInicio.style.fontSize = ("20px")
+/*     botonInicio.style.font = ("Times New Roman");*/    
+botonInicio.style.fontSize = ("20px")
 }
 
 // Función sacada de WW3, versión script (abajo)
@@ -31,11 +31,15 @@ function bacan() {
 
 let formulario = document.getElementById("formulario");
 console.log (formulario);
-formulario.addEventListener ("submit", grabarInfo);
+formulario.addEventListener("submit", grabarInfo);
+
+// El termino onsubmit en HTML reemplaza desde let hasta el primer termino grabar info.
+// Rehacer en un nuevo documento desde let formulario hasta la lìnea de alerta (todo).
+
 function grabarInfo(){
-    console.log("ahora");
+    alert ("ahora");
 }
 
 // Hay que considerar los tipos de elementos usados en HTML. 
 // el valor de tipo "input" (HTML) incluido dentro del formulario (form) y 
-// el cual se expresa como un boton no reconoce en js la funcion click,
+// el cual se expresa como un boton no reconoce en js la funcion click.
